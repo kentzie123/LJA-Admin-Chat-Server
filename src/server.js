@@ -16,7 +16,8 @@ const allowedOrigins = [
   "https://chattrixx.netlify.app",
   "http://192.168.1.5:5174",
   "http://localhost:5174",
-  "http://localhost:5173"
+  "http://localhost:5173",
+  "https://ljapower-revised.netlify.app/"
 ];
 
 const app = express();
