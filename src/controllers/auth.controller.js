@@ -91,7 +91,10 @@ export const createClient = async (req, res) => {
 
   const CHAT_ADMIN_ID = process.env.CHAT_ADMIN_ID;
 
-  io.to(userSocketMap[CHAT_ADMIN_ID]).emit("new_user", data[0]);
+  if (userSocketMap[CHAT_ADMIN_ID]) {
+    io.to(userSocketMap[CHAT_ADMIN_ID]).emit("new_user", data[0]);
+  }
+
   return success(res, "Create client account successfully!", 201);
 };
 
