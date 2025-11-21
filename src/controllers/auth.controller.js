@@ -6,7 +6,7 @@ import { generateToken } from "../utils/generateToken.js";
 import { success, error } from "../utils/responseHandlers.js";
 
 // Socket
-import { io } from "../server.js";
+import { io, userSocketMap } from "../server.js";
 
 // Services
 import {
