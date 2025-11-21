@@ -5,6 +5,9 @@ import { generateToken } from "../utils/generateToken.js";
 // Response handler
 import { success, error } from "../utils/responseHandlers.js";
 
+// Socket
+import { io } from "../server.js";
+
 // Services
 import {
   getUsers,
@@ -86,6 +89,9 @@ export const createClient = async (req, res) => {
     return error(res, err.message);
   }
 
+  const CHAT_ADMIN_ID = process.env.CHAT_ADMIN_ID;
+
+  io.to(userSocketMap[CHAT_ADMIN_ID]).emit("new_user", data[0]);
   return success(res, "Create client account successfully!", 201);
 };
 

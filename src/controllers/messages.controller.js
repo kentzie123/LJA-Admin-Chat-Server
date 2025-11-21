@@ -8,9 +8,6 @@ import {
 // Response handler
 import { success, error } from "../utils/responseHandlers.js";
 
-// Utils
-import { uploadImage } from "../utils/uploadImage.js";
-
 import { io, userSocketMap } from "../server.js";
 
 // Supabase
