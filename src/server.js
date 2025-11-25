@@ -18,7 +18,7 @@ const allowedOrigins = [
   "http://localhost:5174",
   "http://localhost:5173",
   "https://ljapower-revised.netlify.app",
-  "https://lja-power.com/",
+  "https://lja-power.com",
 ];
 
 const app = express();
