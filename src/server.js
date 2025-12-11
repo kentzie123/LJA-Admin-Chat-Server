@@ -13,7 +13,8 @@ import messageRoutes from "./routes/messages.route.js";
 import userRoutes from "./routes/user.route.js";
 
 const allowedOrigins = [
-  "https://ljapowerlimitedco.com"
+  "https://ljapowerlimitedco.com",
+  "http://localhost:5174"
 ];
 
 const app = express();
