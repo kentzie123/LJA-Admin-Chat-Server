@@ -13,14 +13,7 @@ import messageRoutes from "./routes/messages.route.js";
 import userRoutes from "./routes/user.route.js";
 
 const allowedOrigins = [
-  "https://chattrixx.netlify.app",
-  "http://192.168.1.5:5174",
-  "http://localhost:5174",
-  "http://localhost:80",
-  "http://localhost",
-  "http://localhost:5173",
-  "https://ljapower-revised.netlify.app",
-  "https://lja-power.com",
+  "https://ljapowerlimitedco.com"
 ];
 
 const app = express();
