@@ -14,7 +14,8 @@ import userRoutes from "./routes/user.route.js";
 
 const allowedOrigins = [
   "https://ljapowerlimitedco.com",
-  "http://localhost:5174"
+  "http://localhost:5174",
+  "http://localhost"
 ];
 
 const app = express();
